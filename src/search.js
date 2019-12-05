@@ -1,12 +1,15 @@
 import React from 'react'
 
+
 const cartData = []
 var itemPrice = Math.floor(Math.random() * Math.floor(100)+1);
 var totalPrice = 0;
 
 
 
+
 class Search extends React.Component{
+ 
 
   
  
@@ -17,7 +20,8 @@ state = {
       filteredData: [],
       cartData:[],
       totalPrice,
-      itemPrice
+      itemPrice,
+     
     
       
     };
@@ -63,30 +67,16 @@ state = {
 
 
     handleAddToCartClick(product){
-      totalPrice = totalPrice+itemPrice;
-     
+      totalPrice+= itemPrice;
      
       
-      
-      fetch('https://makeup-api.herokuapp.com/api/v1/products.json')
-        .then(response => response.json())
-        .then(data => {
-          cartData.push(product);
-          
-          
-         
-         //const cartData= data.filter(element => {
-           
-            //return element;
+      cartData.push(product);
+      this.setState({
             
-           
-         // });
-     
-        this.setState({
-            data,
             cartData,
             totalPrice,
-            itemPrice
+            itemPrice,
+            
            
            
             
@@ -94,10 +84,10 @@ state = {
           alert("Item successfully added to cart!");
          
          
-          });
+          };
        
         
-    }
+    
   
     
   

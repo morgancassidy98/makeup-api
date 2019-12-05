@@ -16,6 +16,7 @@ class App extends Component {
     filteredProducts: [],
     cartData:[],
     totalPrice,
+  
     
    
     itemPrice,
@@ -33,7 +34,9 @@ componentDidMount() {
       .then((data) => {
         this.setState({
           products: data,
-          cartData
+          cartData,
+          
+
         })
       })
       .catch(console.log)
@@ -41,21 +44,17 @@ componentDidMount() {
   handleRemoveClick(product, totalPrice){
     
     totalPrice=totalPrice-itemPrice;
-  
-    
-  
-    
-  
    
     
-    
+  
     cartData.pop(product);
     alert("Item has been removed");
     
     
     this.setState({
       cartData,
-     totalPrice,
+      totalPrice,
+      
    
     })
   }
@@ -92,7 +91,7 @@ componentDidMount() {
           
           
         ))}
-        <h3>Total:${totalPrice}</h3>
+        <h3>Total:${itemPrice*cartData.length}</h3>
 
         
 
@@ -117,7 +116,7 @@ componentDidMount() {
            <input type="text" placeholder="Zipcode"></input>
            
 
-           <button type="button" className="btn btn-outline-info  " >Purchase </button> <button onClick={this._showCart.bind(null, false)} className={"btn btn-outline-info "}>Continue Shopping</button>
+           <button type="submit" className="btn btn-outline-info  " >Purchase </button> <button onClick={this._showCart.bind(null, false)} className={"btn btn-outline-info "}>Continue Shopping</button>
            </div>
 
          </form>
@@ -134,6 +133,7 @@ componentDidMount() {
         
         </button>
         <img className={"cart-img"} src="https://image.flaticon.com/icons/png/512/34/34627.png"></img>
+        <div>{this.state.cartData.length} item(s) in cart</div>
         
         </div>)}
         
