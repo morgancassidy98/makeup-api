@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/makeup-api/static/css/main.2c7f8e33.chunk.css",
-    "main.js": "/makeup-api/static/js/main.a7ed147c.chunk.js",
-    "main.js.map": "/makeup-api/static/js/main.a7ed147c.chunk.js.map",
+    "main.js": "/makeup-api/static/js/main.b8dc565e.chunk.js",
+    "main.js.map": "/makeup-api/static/js/main.b8dc565e.chunk.js.map",
     "runtime~main.js": "/makeup-api/static/js/runtime~main.a6756ded.js",
     "runtime~main.js.map": "/makeup-api/static/js/runtime~main.a6756ded.js.map",
     "static/js/2.d090816b.chunk.js": "/makeup-api/static/js/2.d090816b.chunk.js",
     "static/js/2.d090816b.chunk.js.map": "/makeup-api/static/js/2.d090816b.chunk.js.map",
     "index.html": "/makeup-api/index.html",
-    "precache-manifest.099850982ac4f66f414789d62d6bc040.js": "/makeup-api/precache-manifest.099850982ac4f66f414789d62d6bc040.js",
+    "precache-manifest.9b6cc089838b6363eafc1380c0f4821c.js": "/makeup-api/precache-manifest.9b6cc089838b6363eafc1380c0f4821c.js",
     "service-worker.js": "/makeup-api/service-worker.js",
     "static/css/main.2c7f8e33.chunk.css.map": "/makeup-api/static/css/main.2c7f8e33.chunk.css.map"
   }
