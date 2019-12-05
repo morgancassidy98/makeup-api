@@ -28,7 +28,7 @@ class App extends Component {
     });
   }
 componentDidMount() {
-    fetch('http://makeup-api.herokuapp.com/api/v1/products.json')
+    fetch('https://makeup-api.herokuapp.com/api/v1/products.json')
       .then(res => res.json())
       .then((data) => {
         this.setState({
