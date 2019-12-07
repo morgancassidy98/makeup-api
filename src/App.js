@@ -58,6 +58,10 @@ componentDidMount() {
    
     })
   }
+  handleSubmit = (e) => {
+   alert("Thank you for your purchase!");
+    
+  }
 
   
 
@@ -100,7 +104,7 @@ componentDidMount() {
              </div>
          
          <div>
-         <form>
+         <form onSubmit={this.handleSubmit}>
            <div className="form-group">
              <h2>Payment</h2>
            <input type="text" placeholder="Card Number"></input>
@@ -116,7 +120,7 @@ componentDidMount() {
            <input type="text" placeholder="Zipcode"></input>
            
 
-           <button type="submit" className="btn btn-outline-info  " >Purchase </button> <button onClick={this._showCart.bind(null, false)} className={"btn btn-outline-info "}>Continue Shopping</button>
+           <button type="submit" className="btn btn-outline-info  " >Purchase </button>  <button type="reset" className="btn btn-outline-info  " >Clear form </button><button onClick={this._showCart.bind(null, false)} className={"btn btn-outline-info "}>Continue Shopping</button>
            </div>
 
          </form>
